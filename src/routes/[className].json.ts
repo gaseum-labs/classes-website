@@ -1,10 +1,12 @@
 import type { RequestHandler } from "@sveltejs/kit";
-import fs from 'fs';
+import * as fs from 'fs/promises';
 
 export const get: RequestHandler = async ({ params }) => {
     const { className } = params;
     const file = `src/overviews/${className}.md`;
-    const content = fs.readFileSync(file, 'utf8');
+    console.log(`Getting the file ${file}...`)
+    const content = await fs.readFile(file, 'utf8');
+    console.log(content);
     return {
         body: {
             content

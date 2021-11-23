@@ -1,13 +1,10 @@
-interface Class {
+export interface Class {
   name: string;
   color: string;
+  prettyName?: string;
 }
 
 export const classes: Class[] = [
-  // {
-  //   name: 'Parkour',
-  //   color: '#FF71D4'
-  // },
   {
     name: 'lavacaster',
     color: '#FF5252'
@@ -29,7 +26,12 @@ export const classes: Class[] = [
     color: '#9737CA'
   },
   {
-    name: 'miner',
-    color: '#717171'
+    name: 'mine',
+    color: '#717171',
+    prettyName: 'Miner',
   },
+  // {
+  //   name: 'parkour', // don't worry about this...
+  //   color: '#FF71D4'
+  // },
 ]
