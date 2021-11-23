@@ -4,32 +4,32 @@ interface Class {
 }
 
 export const classes: Class[] = [
+  // {
+  //   name: 'Parkour',
+  //   color: '#FF71D4'
+  // },
   {
-    name: 'Parkour',
-    color: '#FF71D4'
-  },
-  {
-    name: 'Lavacaster',
+    name: 'lavacaster',
     color: '#FF5252'
   },
   {
-    name: 'Engineer',
+    name: 'engineer',
     color: '#FFB949'
   },
   {
-    name: 'Hunter',
+    name: 'hunter',
     color: '#56F148'
   },
   {
-    name: 'Diver',
+    name: 'diver',
     color: '#35A7FF'
   },
   {
-    name: 'Enchanter',
+    name: 'enchanter',
     color: '#9737CA'
   },
   {
-    name: 'Miner',
+    name: 'miner',
     color: '#717171'
   },
 ]

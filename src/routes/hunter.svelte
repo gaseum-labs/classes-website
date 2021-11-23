@@ -1,10 +1,28 @@
+<script context="module" lang="ts">
+  import type { LoadInput, LoadOutput } from '@sveltejs/kit'
+
+  export async function load({ page, fetch }: LoadInput): Promise<LoadOutput> {
+    const res = await fetch("/hunter.json")
+    const data = await res.json()
+    return {
+      status: 200,
+      props: {
+        content: data.content,
+      }
+    }
+  }
+</script>
+
 <script>
   import { fade } from "svelte/transition"
+  import { marked } from 'marked'
+
+  export let content;
 </script>
 
 <main out:fade in:fade={{ delay: 500 }}>
   <h1>Hunter</h1>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quod ex accusamus quas animi facilis repellat perferendis voluptas veritatis commodi magni nostrum expedita, consequatur eius nulla at quam, nemo omnis!</p>
+  {@html marked(content)}
 </main>
 
 <style>

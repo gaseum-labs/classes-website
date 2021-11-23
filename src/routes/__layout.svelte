@@ -1,8 +1,7 @@
 <script>
-import Nav from "./_Nav.svelte";
-import "$lib/global.css";
-import { fade } from "svelte/transition"
-
+  import Nav from "./_Nav.svelte";
+  import "$lib/global.css";
+  import "$lib/overview.scss"
 </script>
 
 <Nav />
