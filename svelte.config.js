@@ -8,15 +8,12 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs',
-		}),
+		adapter: adapter(),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-		paths: {
-			base: '/classes-website'
-		}
+		vite: {
+			base: '/classes-website/',
+		},
 	},
 };
 
