@@ -9,10 +9,6 @@ export interface Class {
 }
 
 export const classes: Class[] = [
-	// {
-	//   name: 'parkour', // don't worry about this...
-	//   color: '#FF71D4',
-	// },
 	{
 		name: 'lavacaster',
 		prettyName: 'Lavacaster',

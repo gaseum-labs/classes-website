@@ -4,7 +4,6 @@ h2 {
 
 h3 {
 	color: rgb(58, 58, 58);
-	// text-decoration: underline;
 }
 
 code {
@@ -23,14 +22,21 @@ video {
 }
 
 .hflex {
-	display: flex;
-	flex-direction: row;
-	section {
-		margin-right: 100px;
+	@media (min-width: 600px) {
+		display: flex;
+		flex-direction: row;
+		section {
+			margin-right: 100px;
+		}
+		h3,
+		ul {
+			margin: 0;
+		}
 	}
-	h3,
-	ul {
-		margin: 0;
+	@media (max-width: 599px) {
+		li {
+			margin-left: 40px;
+		}
 	}
 }
 

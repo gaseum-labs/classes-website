@@ -27,7 +27,7 @@
 	import { marked } from 'marked';
 	import { page } from '$app/stores';
 
-	import Og from '$lib/OG.svelte';
+	import OG from '$lib/OG.svelte';
 
 	export let content: string;
 	export let theClass: Class;
@@ -39,7 +39,7 @@
 
 <svelte:head>
 	<title>{theClass.prettyName}</title>
-	<Og
+	<OG
 		title={theClass.prettyName}
 		description={theClass.embedInfo.description}
 		image="/images/embed/{theClass.name}.png"

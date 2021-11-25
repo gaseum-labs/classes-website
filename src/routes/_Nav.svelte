@@ -6,9 +6,13 @@
 
 	function updatePageIndicator() {
 		if (browser) {
-			const pageIndicator = document.querySelector('.page-indicator') as HTMLDivElement;
+			const pageIndicator = document.querySelector(
+				'.page-indicator'
+			) as HTMLDivElement;
 			if (!pageIndicator) return;
-			const classIndex = classes.findIndex((c) => c.name.toLowerCase() === $page.path.substring(1));
+			const classIndex = classes.findIndex(
+				(c) => c.name.toLowerCase() === $page.path.substring(1)
+			);
 			const theClass = classes[classIndex];
 			pageIndicator.style.width = `${100 / classes.length}%`;
 			pageIndicator.style.left = `${(classIndex * 100) / classes.length}%`;

@@ -1,1 +1,1 @@
-sdasdThis is the overview for Miner.
+This is the overview for Miner.
