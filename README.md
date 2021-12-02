@@ -1,6 +1,4 @@
-# Classes Website
-
-A small overview of each class you can play in the classes chc.
+# Gaseum Labs Website
 
 ## Developing
 
